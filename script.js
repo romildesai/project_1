@@ -14,4 +14,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       alert("Please fill out all fields.");
       event.preventDefault();
   }
+  else{
+    localStorage.setItem('contactFormName', name);
+    localStorage.setItem('contactFormEmail', email);
+    localStorage.setItem('contactFormMessage', message);
+    alert("data added");
+  }
 });
